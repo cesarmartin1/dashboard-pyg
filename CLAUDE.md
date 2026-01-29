@@ -4,6 +4,7 @@
 Dashboard interactivo en Streamlit para análisis de Pérdidas y Ganancias y Balance de Situación de AUTOPULLMAN SAN SEBASTIÁN S.L.
 
 ## Último Cambio Realizado
+- Repositorio creado en GitHub: https://github.com/cesarmartin1/dashboard-pyg
 - Migrado a Python 3.12 con virtual environment (`venv/`) para evitar crashes de Python 3.14 en macOS
 - Corregidos errores de `background_gradient requires matplotlib` en secciones Comparativo, KPIs Avanzados e Ingresos
 - Mejorados patrones de búsqueda de KPIs para detectar "RESULTADO DE EXPLOTACION" (sin acento) y "RESULTADO DEL EJERCICIO"
@@ -11,16 +12,21 @@ Dashboard interactivo en Streamlit para análisis de Pérdidas y Ganancias y Bal
 ## Estado Actual
 
 ### Funciona:
-- Carga de archivo P&G Excel
-- Carga de archivo Balance Excel (opcional)
-- Extracción de todos los KPIs (ingresos, ebitda, resultado_neto, etc.)
-- Sección Resumen Ejecutivo
-- Sección Ingresos
-- Sección Gastos
-- Sección Análisis Comparativo
-- Sección KPIs Avanzados
-- Sección Balance de Situación
-- Sección Ratios Financieros
+- ✅ Carga de archivo P&G Excel
+- ✅ Carga de archivo Balance Excel (opcional)
+- ✅ Extracción de todos los KPIs (ingresos, ebitda, resultado_neto, etc.)
+- ✅ Sección Resumen Ejecutivo
+- ✅ Sección Ingresos
+- ✅ Sección Gastos
+- ✅ Sección Análisis Comparativo
+- ✅ Sección KPIs Avanzados
+- ✅ Sección Balance de Situación
+- ✅ Sección Ratios Financieros
+- ✅ Repositorio en GitHub
+
+### Falta:
+- Tests automatizados
+- Exportación PDF (dependencia opcional)
 
 ### Requisitos:
 - Python 3.12 (usar virtual environment)
@@ -33,9 +39,9 @@ streamlit run app.py
 ```
 
 ## Próximo Paso Concreto
-- Verificar estabilidad del dashboard con Python 3.12
-- Considerar agregar tests automatizados para los extractores de KPIs
-- Opcional: Mejorar UI/UX y agregar más gráficos comparativos
+1. Probar dashboard con archivos Excel reales y verificar estabilidad
+2. Agregar tests automatizados para los extractores de KPIs
+3. Opcional: Mejorar UI/UX y agregar más gráficos comparativos
 
 ## Estructura del Proyecto
 ```
